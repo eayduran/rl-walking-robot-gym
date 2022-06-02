@@ -1,0 +1,2728 @@
+<?xml version="1.0"?>
+<robot name="obs1">
+    <material name="blue">
+        <color rgba="0 0.5 0.2 1"/>
+    </material>
+    <link name="torso">       
+        <visual>
+            <geometry>
+                <box size="0.005 0.005 0.005"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+              <geometry>
+                    <box size="0.005 0.005 0.005"/>
+              </geometry>
+              <origin xyz="0 0 0"/>
+        </collision>
+        <inertial>
+              <origin xyz="0 0 0"/>
+              <mass value="100.2"/>
+              <inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+    <link name="left_upper_arm0">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left0" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.26 -0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm0"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+<link name="left_upper_arm1">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left1" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.13 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm1"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm2">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left2" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.33 -0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm2"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm3">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left3" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.5 -0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm3"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm4">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left4" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.08 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm4"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm5">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left5" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.12 -0.04 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm5"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm6">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left6" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.44 0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm6"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm7">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left7" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.32 0.11 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm7"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm8">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left8" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.45 0.07 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm8"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm9">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left9" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.01 -0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm9"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm10">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left10" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.3 0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm10"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm11">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left11" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.42 -0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm11"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm12">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left12" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.2 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm12"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm13">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left13" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.28 0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm13"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm14">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left14" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.48 -0.04 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm14"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm15">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left15" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.49 0.0 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm15"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm16">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left16" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.15 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm16"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm17">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left17" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.23 -0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm17"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm18">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left18" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.46 -0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm18"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm19">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left19" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.0 0.14 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm19"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm20">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left20" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.5 -0.15 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm20"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm21">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left21" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.17 -0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm21"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm22">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left22" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.46 0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm22"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm23">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left23" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.2 -0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm23"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm24">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left24" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.2 0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm24"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm25">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left25" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.24 -0.04 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm25"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm26">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left26" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.39 0.07 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm26"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm27">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left27" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.43 -0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm27"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm28">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left28" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.16 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm28"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm29">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left29" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.38 0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm29"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm30">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left30" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.32 0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm30"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm31">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left31" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.11 0.02 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm31"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm32">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left32" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.4 -0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm32"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm33">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left33" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.16 -0.11 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm33"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm34">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left34" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.48 -0.14 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm34"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm35">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left35" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.18 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm35"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm36">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left36" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.26 -0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm36"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm37">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left37" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.09 0.11 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm37"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm38">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left38" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.46 -0.04 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm38"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm39">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left39" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.03 -0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm39"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm40">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left40" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.4 0.07 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm40"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm41">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left41" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.3 -0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm41"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm42">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left42" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.16 0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm42"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm43">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left43" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.37 -0.14 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm43"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm44">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left44" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.21 0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm44"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm45">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left45" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.37 0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm45"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm46">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left46" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.01 0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm46"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm47">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left47" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.24 0.02 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm47"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm48">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left48" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.09 -0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm48"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm49">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left49" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.09 0.0 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm49"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm50">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left50" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.5 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm50"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm51">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left51" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.26 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm51"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm52">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left52" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.27 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm52"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm53">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left53" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.03 -0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm53"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm54">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left54" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.34 0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm54"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm55">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left55" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.47 0.14 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm55"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm56">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left56" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.05 -0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm56"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm57">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left57" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.19 0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm57"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm58">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left58" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.27 -0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm58"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm59">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left59" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.06 0.15 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm59"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm60">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left60" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.1 0.07 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm60"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm61">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left61" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.04 0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm61"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm62">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left62" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.09 -0.15 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm62"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm63">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left63" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.38 -0.02 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm63"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm64">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left64" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.17 -0.04 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm64"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm65">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left65" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.19 -0.02 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm65"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm66">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left66" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.2 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm66"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm67">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left67" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.09 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm67"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm68">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left68" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.5 -0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm68"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm69">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left69" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.39 -0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm69"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm70">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left70" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.07 0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm70"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm71">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left71" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.18 0.15 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm71"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm72">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left72" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.13 0.15 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm72"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm73">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left73" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.25 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm73"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm74">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left74" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.38 0.11 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm74"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm75">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left75" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.16 0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm75"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm76">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left76" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.18 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm76"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm77">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left77" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.39 0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm77"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm78">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left78" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.04 0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm78"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm79">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left79" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.12 0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm79"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm80">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left80" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.31 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm80"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm81">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left81" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.35 0.1 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm81"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm82">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left82" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.34 0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm82"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm83">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left83" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.43 -0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm83"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm84">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left84" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.31 -0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm84"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm85">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left85" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.24 0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm85"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm86">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left86" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.13 -0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm86"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm87">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left87" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.15 -0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm87"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm88">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left88" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.1 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm88"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm89">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left89" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.08 -0.09 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm89"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm90">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left90" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.22 0.14 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm90"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm91">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left91" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.28 -0.08 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm91"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm92">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left92" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.47 -0.12 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm92"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm93">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left93" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.25 -0.06 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm93"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm94">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left94" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.27 -0.13 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm94"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm95">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left95" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.04 0.05 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm95"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm96">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left96" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.4 0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm96"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm97">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left97" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.13 0.03 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm97"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm98">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left98" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="0.11 0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm98"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+<link name="left_upper_arm99">
+<visual>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<collision>
+<geometry>
+<box size="0.02 0.02 0.01"/>
+</geometry>
+<origin xyz="0 0 0"/>
+</collision>
+<inertial>
+<origin xyz="0 0 0"/>
+<mass value="100.2"/>
+<inertia ixx="0.0002" iyy="0.0003"  izz="0.0004" ixy="0.0" ixz="0.0" iyz="0.0"/>
+</inertial>
+</link>
+<joint name="shoulder_left99" type="revolute">
+<axis xyz="0 1 0"/>
+<origin xyz="-0.06 -0.01 0" rpy="0 0 0"/>
+<parent link="torso"/>
+<child link="left_upper_arm99"/>
+<limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+</joint>
+
+
+
+
+
+</robot>
