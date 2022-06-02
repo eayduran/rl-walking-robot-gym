@@ -22,7 +22,9 @@ python3 train_robot.py
 
 # If you want to train the robot with obstacles:
 
-In the robot_gym_env.py file, remove comment on line 139
+In the robot_gym_env.py file, remove comment on line 139. Then run python3 train_robot.py
+
+# Info about folders.
 
 In models folder, you can see the 3d model of the robot and obstacles.
 
