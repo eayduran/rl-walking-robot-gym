@@ -1,4 +1,4 @@
-# This is a Reinforcement Learning application. You can train a robot to walk with this repo. Soft Actor Critic and Proximal Policy Optimization methods were used in this work.
+This is a Reinforcement Learning application. You can train a robot to walk with this repo. Soft Actor Critic and Proximal Policy Optimization methods were used in this work.
 
 # You need to install some python libraries which:
 
@@ -24,12 +24,12 @@ python3 train_robot.py
 
 In the robot_gym_env.py file, remove comment on line 139
 
-# In models folder, you can see the 3d model of the robot and obstacles.
+In models folder, you can see the 3d model of the robot and obstacles.
 
-# In trained folder, you can see the trained file.
+In trained folder, you can see the trained file.
 
-# robot_gym_env.py is the environment of the trainings.
+robot_gym_env.py is the environment of the trainings.
 
-# run_robot.py is the file to load the trained model.
+run_robot.py is the file to load the trained model.
 
-# train_robot.py is the train file for the robot training
+train_robot.py is the train file for the robot training
